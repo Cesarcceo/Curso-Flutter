@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
           itemBuilder: (context, index) => ListTile(
             leading: Icon(
               menuOptions[index].icon,
-              color: AppTheme.lightTheme.primaryColor,
+              color: AppTheme.primary,
             ),
             title: Text(menuOptions[index].name),
             onTap: () {
