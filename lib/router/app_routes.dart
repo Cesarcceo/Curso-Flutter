@@ -27,7 +27,7 @@ class AppRoutes {
         route: 'alert',
         icon: Icons.add_alert,
         name: 'Alert',
-        screen: const alertScreen()),
+        screen: const AlertScreen()),
     MenuOption(
         route: 'card',
         icon: Icons.card_membership,
@@ -52,6 +52,6 @@ class AppRoutes {
   //};
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     print(settings);
-    return MaterialPageRoute(builder: (context) => const alertScreen());
+    return MaterialPageRoute(builder: (context) => const AlertScreen());
   }
 }
