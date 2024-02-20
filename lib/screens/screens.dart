@@ -1,3 +1,4 @@
+export 'package:primer_proyecto/screens/animated_screen.dart';
 export 'package:primer_proyecto/screens/avatar_screen.dart';
 export 'package:primer_proyecto/screens/alert_screen.dart';
 export 'package:primer_proyecto/screens/card_screen.dart';
