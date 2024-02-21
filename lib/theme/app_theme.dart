@@ -21,6 +21,21 @@ class AppTheme {
       shape: const StadiumBorder(),
       elevation: 0,
     )),
+
+    inputDecorationTheme: const InputDecorationTheme(
+      floatingLabelStyle: TextStyle(color: primary),
+      enabledBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: primary),
+          borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(8), topRight: Radius.circular(8))),
+      focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: primary),
+          borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(8), topRight: Radius.circular(8))),
+      border: OutlineInputBorder(
+          borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(8), topRight: Radius.circular(8))),
+    ),
   );
   static final ThemeData darkTheme = ThemeData.dark().copyWith(
       primaryColor: Colors.blue,
