@@ -83,8 +83,8 @@ class AlertScreen extends StatelessWidget {
                 ),
               ),
               onPressed: () => Platform.isAndroid
-                  ? displayDialogAndroid(context)
-                  : displayDialogIOS(context))),
+                  ? displayDialogIOS(context)
+                  : displayDialogAndroid(context))),
       floatingActionButton: FloatingActionButton(
           child: const Icon(Icons.close),
           onPressed: () => Navigator.pop(context)),
