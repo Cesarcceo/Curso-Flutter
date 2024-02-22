@@ -1,3 +1,4 @@
+export 'package:primer_proyecto/screens/listview_builder_screen.dart';
 export 'package:primer_proyecto/screens/slider_screen.dart';
 export 'package:primer_proyecto/screens/inputs_screen.dart';
 export 'package:primer_proyecto/screens/animated_screen.dart';
