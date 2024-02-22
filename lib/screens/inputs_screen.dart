@@ -11,9 +11,9 @@ class InputsScreen extends StatelessWidget {
 
     final Map<String, String> formValues = {
       'nombre': 'Cesario',
-      'id': '548',
+      'id': '5488987',
       'email': 'mincesario@gmail',
-      'contrasena': '8987',
+      'password': '8987548',
       'role': 'Adim',
     };
 
@@ -28,29 +28,37 @@ class InputsScreen extends StatelessWidget {
             key: myFormKey,
             child: Column(
               children: [
-                const CustomInputField(
+                CustomInputField(
                   labelText: 'Tu nombre, hijo de mama coco',
                   helperText: 'solo nombres',
                   hintText: 'Maama coco te pregunta tu nombre',
+                  formProperty: 'nombre',
+                  formValues: formValues,
                 ),
                 const SizedBox(height: 25),
-                const CustomInputField(
+                CustomInputField(
                   labelText: 'Tu id, hijo de mama coco',
                   helperText: 'solo numeros',
                   hintText: 'Maama coco te pregunta tu id',
+                  formProperty: 'id',
+                  formValues: formValues,
                 ),
                 const SizedBox(height: 25),
-                const CustomInputField(
+                CustomInputField(
                   labelText: 'Tu correo, hijo de mama coco',
                   helperText: 'solo correos',
                   hintText: 'Maama coco te pregunta tu correo',
                   keyboardType: TextInputType.emailAddress,
+                  formProperty: 'email',
+                  formValues: formValues,
                 ),
                 const SizedBox(height: 25),
-                const CustomInputField(
+                CustomInputField(
                   labelText: 'Tu contrasena, hijo de mama coco',
                   hintText: 'Maama coco te pregunta tu contrasena',
                   obcureText: true,
+                  formProperty: 'password',
+                  formValues: formValues,
                 ),
                 const SizedBox(height: 25),
                 ElevatedButton(
